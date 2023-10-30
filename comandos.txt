@@ -1,0 +1,2 @@
+ng new nombre del proyecto crea un nuevo proyecto
+ng serve --open o --o  abre la app 
