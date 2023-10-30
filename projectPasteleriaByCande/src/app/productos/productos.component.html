@@ -1,0 +1,11 @@
+<!-- <h2>{{cheeseCake.name| uppercase}}</h2>
+<div><span>id: </span>{{cheeseCake.id}}</div>
+<div><span>price: </span>{{cheeseCake.price}}</div>
+<div><span>contenido: </span>{{cheeseCake.filling}}</div> -->
+
+<div>
+    <label for="name">Dessert name: </label>
+    <input id="name" [(ngModel)]= "cheeseCake.name" placeholder="name">
+    <br>
+    <label for="name">{{cheeseCake.name}}</label>
+</div>

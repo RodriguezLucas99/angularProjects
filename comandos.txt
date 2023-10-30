@@ -1,2 +1,32 @@
-ng new nombre del proyecto crea un nuevo proyecto
-ng serve --open o --o  abre la app 
+projects:
+
+ng new nombre del proyecto -> crea un nuevo proyecto
+ng serve --open o --o  -> abre la app
+ng generate component nombre del componente -> crea un componente
+ 
+despues de clonar un repo hacer un npm install
+posible error con parse body -> npm install --save @types/body-parser y reiniciar vsc
+
+angular concepts:
+
+componentes:
+
+@Component is a decorator function that specifies the Angular metadata for the component.
+Always export the component class so you can import it elsewhere … like in the AppModule
+
+pipes:
+Pipes are a good way to format strings, currency amounts, dates, and other display data
+
+FormModules:
+
+to use it you has to add it in app.module, add this sentence
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+and add FormsModule to the array of imports
+
+RULE Every component must be declared in exactly one NgModule
+
+[(ngModel)]:is Angular's two-way data binding syntax.
+
+html:
+
+{{variable propiedad de .ts}}The double curly braces are Angular's interpolation binding syntax
