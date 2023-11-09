@@ -9,3 +9,17 @@
     <br>
     <label for="name">{{cheeseCake.name}}</label>
 </div>
+
+<h2>My products</h2>
+<ul class="heroes">
+  <li *ngFor="let producto of productosLista" >
+    <!-- <button [class.selected]="producto === selectedP" type="button" (click)="onSelect(producto)">
+      <span class="badge">{{producto.id}}</span>
+      <span class="name">{{producto.name}}</span>
+    </button> -->
+    <a routerLink="/productosDetail/{{producto.id}}">
+      <span class="badge">{{producto.id}}</span> {{producto.name}}
+    </a>
+  </li>
+</ul>
+<!-- <app-product-details [product]="selectedP"></app-product-details> -->

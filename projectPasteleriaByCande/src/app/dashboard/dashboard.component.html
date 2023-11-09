@@ -1,0 +1,7 @@
+<h2>Los mas elegidos</h2>
+<div class="productos-menu">
+  <a *ngFor="let producto of productosLista"
+    routerLink="/productosDetail/{{producto.id}}">
+    {{producto.name}}
+  </a>
+</div>

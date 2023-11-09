@@ -3,7 +3,11 @@ projects:
 ng new nombre del proyecto -> crea un nuevo proyecto
 ng serve --open o --o  -> abre la app
 ng generate component nombre del componente -> crea un componente
- 
+ng generate service nombre ->genera un servicio
+ng generate module app-routing --flat --module=app
+ --flat Puts the file in src/app instead of its own directory
+--module=app Tells ng generate to register it in the imports array of the AppModule
+
 despues de clonar un repo hacer un npm install
 posible error con parse body -> npm install --save @types/body-parser y reiniciar vsc
 
@@ -25,7 +29,27 @@ and add FormsModule to the array of imports
 
 RULE Every component must be declared in exactly one NgModule
 
+*ngfor=let list of componentes" -> iterador is Angular's repeater directive
+
+*ngif="variable" es un if que controla el html
+
+(click)="onSelected(variable)" produce un evento click
+
+[class.nombreDeClase]="condicion" actva una clase si se cumple la condicion
+
 [(ngModel)]:is Angular's two-way data binding syntax.
+
+@input variable:tipo; permite darle un valor a una variable que proviene de un componente padre
+
+se necesita agregar input al import angular core
+
+y por ultimo en el html padre agregar la etiqueta del nuevo componente [nombre varable en el nuevo componente]="nombre de variable ne le componente padre"
+
+services:
+@Injectable() decorator. This marks the class as one that participates in the dependency injection system
+
+Observable:
+ is one of the key classes in rxjs
 
 html:
 

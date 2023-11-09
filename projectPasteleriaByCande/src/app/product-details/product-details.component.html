@@ -1,0 +1,9 @@
+<div *ngIf="product">
+    <h2>{{product.name | uppercase}} Details</h2>
+    <div>id: {{product.id}}</div>
+    <div>
+      <label for="hero-name">Dessert name: </label>
+      <input id="hero-name" [(ngModel)]="product.name" placeholder="name">
+    </div>
+</div>
+<button type="button" (click)="goBack()">go back</button>
