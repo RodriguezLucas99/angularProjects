@@ -10,6 +10,16 @@
     <label for="name">{{cheeseCake.name}}</label>
 </div>
 
+<div>
+  <label for="new-hero">Dessert name: </label>
+  <input id="new-hero" #dessertName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" (click)="add(dessertName.value); dessertName.value=''">
+    Add hero
+  </button>
+</div>
+
 <h2>My products</h2>
 <ul class="heroes">
   <li *ngFor="let producto of productosLista" >

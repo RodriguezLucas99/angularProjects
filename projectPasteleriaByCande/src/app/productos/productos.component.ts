@@ -30,4 +30,12 @@ export class ProductosComponent {
     ngOnInit(): void {
       this.getDessert();
     }
+    add(name: string): void {
+      name = name.trim();
+      if (!name) { return; }
+      this.dessertService.addDessert({ name } as productosObj)
+        .subscribe(hero => {
+          this.heroes.push(hero);
+        });
+    }
 }

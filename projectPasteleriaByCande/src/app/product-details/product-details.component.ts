@@ -29,5 +29,11 @@ export class ProductDetailsComponent {
   goBack(): void {
     this.location.back();
   }
+  save(): void {
+    if (this.product) {
+      this.Service.updateDessert(this.product)
+        .subscribe(() => this.goBack());
+    }
+  }
 }
 
